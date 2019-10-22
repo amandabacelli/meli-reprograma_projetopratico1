@@ -12,3 +12,12 @@ exports.getIdTask = (req, res) => {
     }
     
 }
+exports.getConcluidos = (req,res) => {
+    const taskConcluido = tarefas.filter(element => element.concluido == "true")
+     res.status(200).send(taskConcluido)
+}
+
+exports.getColaborador = (req,res) => {
+    const nome = req.params.nome
+    res.status(200).send(tarefas.filter(element => element.nomeColaborador == nome))
+}
