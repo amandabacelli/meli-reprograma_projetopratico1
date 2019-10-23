@@ -1,7 +1,7 @@
 # meli-reprograma_projetopratico1
 MercadoLivre | BackEnd | Projeto Prático
 
-## Projeto Prático - API Tarefas
+## Projeto Prático - API Tarefas - Branch (Projeto)
 
 **Objetivo:** Criar uma API utilizando JavaScript com NodeJS, Express e Postman; verbo HTML utilizado: GET.
 
