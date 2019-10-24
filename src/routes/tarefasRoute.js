@@ -4,6 +4,7 @@ const controller = require("../controllers/tarefasController")
 
 router.get('/', controller.get)
 router.get('/concluidas', controller.getConcluidos)
+router.get('/concluidas/data', controller.getTarefasOrganizadas)
 router.get('/:id', controller.getIdTask)
 router.get('/colaborador/:nome', controller.getColaborador)
 

@@ -21,3 +21,12 @@ exports.getColaborador = (req,res) => {
     const nome = req.params.nome
     res.status(200).send(tarefas.filter(element => element.nomeColaborador == nome))
 }
+
+exports.getTarefasOrganizadas = (req, res) => {
+    const tarefasOrganizadas = tarefas.sort((a,b) => {
+        return a.dataConlusao - b.dataConlusao
+    })
+    console.log(tarefas.dataConlusao)
+  
+    res.status(200).send(tarefasOrganizadas)
+}
